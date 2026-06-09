@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy-click | Доступний Маркетплейс</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fcfcfc;
+            color: #1a1a1a; /* Максимально темний колір тексту для контрасту WCAG */
+        }
+
+        .page-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .site-header {
+            background-color: #0d2c54; /* Збільшено контрастність фону (темно-синій) */
+            color: #ffffff;
+            padding: 25px;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .site-header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            letter-spacing: 0.5px;
+        }
+
+        .site-nav {
+            background-color: #ffffff;
+            border: 2px solid #0d2c54; /* Чітка видима рамка меж */
+            border-radius: 8px;
+            padding: 12px 20px;
+            margin-bottom: 20px;
+        }
+
+        .site-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 25px;
+        }
+
+        .site-nav a {
+            text-decoration: underline; /* Підкреслення посилань полегшує розпізнавання */
+            color: #0d2c54;
+            font-weight: 700;
+            font-size: 1.05rem;
+        }
+
+        /* ПОКРАЩЕННЯ FOCUS STATE: Яскравий індикатор для навігації з клавіатури */
+        .site-nav a:focus, .card-btn:focus {
+            outline: 3px solid #ff9f1c; /* Помаранчева жирна рамка фокусу */
+            outline-offset: 4px;
+        }
+
+        .card-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+
+        .product-card {
+            background-color: #ffffff;
+            border: 1px solid #cccccc;
+            border-radius: 8px;
+            padding: 18px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card-img {
+            max-width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin-bottom: 12px;
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+            margin: 12px 0;
+            color: #1a1a1a;
+        }
+
+        .card-price {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #b32d00; /* Контрастний темно-червоний колір ціни */
+            margin: 5px 0 15px 0;
+        }
+
+        .card-btn {
+            background-color: #1b4d3e; /* Суперконтрастний темно-зелений колір кнопки */
+            color: #ffffff;
+            border: none;
+            padding: 12px 15px;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .card-btn:hover {
+            background-color: #123329;
+        }
+
+        .site-footer {
+            text-align: center;
+            padding: 20px;
+            color: #444444; /* Темніший сірий для читабельності */
+            font-size: 0.95rem;
+            border-top: 2px solid #0d2c54;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="root"></div>
+
+    <script src="src/index.js" defer></script>
+
+</body>
+</html>
